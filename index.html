@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QPresence.com</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+    }
+    header {
+      background-color: white;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    header .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+    }
+    header nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+    }
+    header nav ul li {
+      margin: 0 10px;
+    }
+    header nav ul li a {
+      text-decoration: none;
+      color: #333;
+      transition: color 0.3s;
+    }
+    header nav ul li a:hover {
+      color: #007BFF;
+    }
+    .hero {
+      background-color: #007BFF;
+      color: white;
+      text-align: center;
+      padding: 50px 20px;
+      position: relative;
+    }
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+    .hero button {
+      background-color: white;
+      color: #007BFF;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .hero button:hover {
+      background-color: #f0f0f0;
+    }
+    .hero img {
+        display: block;
+        max-width: 300px;
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+    section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+    .features {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .features .feature {
+      width: 300px;
+      background-color: white;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      padding: 20px;
+      transition: box-shadow 0.3s;
+    }
+    .features .feature img {
+      width: 100px;
+      height: 100px;
+      object-fit: contain;
+      margin-bottom: 10px;
+    }
+    .features .feature:hover {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    .pricing {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .pricing .plan {
+      width: 300px;
+      background-color: white;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      padding: 20px;
+      transition: box-shadow 0.3s;
+    }
+    .pricing .plan:hover {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    .pricing button {
+      color: white;
+      background-color: #007bff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .pricing button:hover {
+        background-color: #006ce0;
+    }
+    footer {
+      background-color: #007BFF;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>QPresence.com</h1>
+      <nav>
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#how-it-works">How It Works</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <h2>Effortless Attendance Tracking with QR Codes</h2>
+    <p>Generate, scan, and analyze attendance seamlessly for events, training sessions, or lectures.</p>
+    <button>Get Started for Free</button>
+    <img src="hero.webp" alt="Illustration of QR code scanning">
+  </section>
+
+  <section id="features">
+    <h2>Features</h2>
+    <div class="features">
+      <div class="feature">
+        <img src="qr-code.webp" alt="QR Code">
+        <h3>QR Code Generation</h3>
+        <p>Generate personalized QR codes for each participant.</p>
+      </div>
+      <div class="feature">
+        <img src="scanner.webp" alt="Scanner">
+        <h3>Instant Scanning</h3>
+        <p>Effortlessly scan QR codes and mark attendance.</p>
+      </div>
+      <div class="feature">
+        <img src="analytics.webp" alt="Analytics">
+        <h3>Attendance Insights</h3>
+        <p>View detailed reports and arrival time histograms.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="how-it-works">
+    <h2>How It Works</h2>
+    <div class="how-it-works">
+      <div>
+        <h3>Step 1</h3>
+        <p>Sign up and create an event.</p>
+      </div>
+      <div>
+        <h3>Step 2</h3>
+        <p>Generate QR codes for participants.</p>
+      </div>
+      <div>
+        <h3>Step 3</h3>
+        <p>Scan codes and access attendance insights.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing">
+    <h2>Pricing</h2>
+    <p>Choose a plan that fits your needs.</p>
+    <div class="pricing">
+        <div class="plan">
+          <h3>Start Free</h3>
+          <p>For small events</p>
+          <!-- <p>$0/month</p> -->
+        <button>Get Started</button>
+        </div>
+      <div class="plan">
+        <h3>Pay when you need more</h3>
+        <p>For regular events and bigger audience</p>
+        <!-- <p>$10/month</p> -->
+        <button>Get Started</button>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <p>Have questions? Reach out to us at <a href="mailto:support@qpresence.com" style="color: white; text-decoration: underline;">support@qpresence.com</a></p>
+    <p>&copy; 2025 QPresence.com. All rights reserved.</p>
+  </footer>
+</body>
+</html>
