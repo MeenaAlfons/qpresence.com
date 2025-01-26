@@ -4,6 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>QPresence.com</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
   <style>
     body {
       margin: 0;
@@ -22,6 +26,11 @@
       justify-content: space-between;
       align-items: center;
       padding: 10px 20px;
+    }
+    header .logo-title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
     }
     header nav ul {
       list-style: none;
@@ -143,7 +152,10 @@
 <body>
   <header>
     <div class="container">
-      <h1>QPresence.com</h1>
+      <div class="logo-title">
+        <img src="images/logo.png" width="64" height="64" alt="Logo">
+        <h1>QPresence</h1>
+      </div>
       <nav>
         <ul>
           <li><a href="#features">Features</a></li>
@@ -159,24 +171,24 @@
     <h2>Effortless Attendance Tracking with QR Codes</h2>
     <p>Generate, scan, and analyze attendance seamlessly for events, training sessions, or lectures.</p>
     <button onclick="window.location='https://app.qpresence.com';">Get Started for Free</button>
-    <img src="hero.webp" alt="Illustration of QR code scanning">
+    <img src="images/hero.webp" alt="Illustration of QR code scanning">
   </section>
 
   <section id="features">
     <h2>Features</h2>
     <div class="features">
       <div class="feature">
-        <img src="qr-code.webp" alt="QR Code">
+        <img src="images/qr-code.webp" alt="QR Code">
         <h3>QR Code Generation</h3>
         <p>Generate personalized QR codes for each participant.</p>
       </div>
       <div class="feature">
-        <img src="scanner.webp" alt="Scanner">
+        <img src="images/scanner.webp" alt="Scanner">
         <h3>Instant Scanning</h3>
         <p>Effortlessly scan QR codes and mark attendance.</p>
       </div>
       <div class="feature">
-        <img src="analytics.webp" alt="Analytics">
+        <img src="images/analytics.webp" alt="Analytics">
         <h3>Attendance Insights</h3>
         <p>View detailed reports and arrival time histograms.</p>
       </div>
